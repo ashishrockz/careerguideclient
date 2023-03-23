@@ -16,7 +16,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:8080/contents')
+      .get('https://carrerguideapi.onrender.com')
       .then((res) => setPosts(res.data))
       .catch((error) => console.log(error));
   }, []);
